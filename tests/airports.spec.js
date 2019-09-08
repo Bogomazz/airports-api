@@ -50,4 +50,10 @@ describe('GET /airports', () => {
     expect(res.status).toBe(500);
     done();
   });
+
+  it('should return 404 error url does not exist', async done => {
+    const res = await request(app).get('/api/airports/fake');
+    expect(res.status).toBe(404);
+    done();
+  });
 });
