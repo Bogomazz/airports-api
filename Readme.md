@@ -1,0 +1,1 @@
+Api accessible on http://34.245.192.86:3000/api/airports
