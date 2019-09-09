@@ -20,7 +20,7 @@ CREATE TABLE airports (
 
 LOAD DATA LOCAL 
     INFILE '/path/to/airports.dat'
-    REPLACE INTO TABLE airports.airports
+    REPLACE INTO TABLE airports
     FIELDS ESCAPED BY '\"'
     TERMINATED BY ','
     OPTIONALLY ENCLOSED BY '\"'
